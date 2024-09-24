@@ -10,3 +10,9 @@ Markdown works likes discord.
 `  `Is code
 
 ~  ~Is Strikethru~
+
+
+-
+-Is list
+-and list
+-and list
