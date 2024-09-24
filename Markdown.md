@@ -7,7 +7,6 @@ Markdown works likes discord.
 ** **Is bold**
 * *Is ittalics*
 
-Table   | Syntax | Description |
-        | ----------- | ----------- |
-        | Header | Title |
-        | Paragraph | Text |
+`  `Is code`
+
+~  ~Is Strikethru~
