@@ -5,7 +5,7 @@ Idea 1- Soulslike game
 - Weapon attribute system and a way to farm weapons to find a stat you want(a dungeon of sorts)
 - A way to refine stats and level up certain weapon attributes
 - Lock on system much like soulslike games.
-- different movesets for different types of weapons. E.G. Guns would obviously be a long
+- different movesets for different types of weapons. E.G. Guns would obviously be a ranged weapon, whereas swords would be at meelee ranges.
 - interesting movement system that includes things like grappling hooks, short dashes, rolls and even prehaps quick teleports
 
 
@@ -28,3 +28,19 @@ Idea 4 - Spy game
  - vision systems
  - hacking systems including minigames
  - interrogation systems (maybe)
+
+
+
+ # Soulslike Game
+
+ ## Movement
+ - The game would be quite fast paced, pushing you through the open world and keeping enemies around, ready for you to fight whenever you wish.
+ - 
+
+
+ ## Combat
+
+ ## Player Character
+
+ ## Weapons
+
