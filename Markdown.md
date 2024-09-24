@@ -7,6 +7,6 @@ Markdown works likes discord.
 ** **Is bold**
 * *Is ittalics*
 
-`  `Is code`
+`  `Is code
 
 ~  ~Is Strikethru~
