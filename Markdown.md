@@ -41,3 +41,9 @@ Markdown works likes discord.
   * Extras
   * Extra 2 electric boogaloo (i have only 1 joke leave me alone)
 + numberd list 3 meeeeeeeeeeeep
+
+
+![This is fie](image.png)
+	
+[https://en.wikipedia.org/wiki/Defenestration] ("Totally fine website")
+[https://openai.com/chatgpt/] ("Not an AI") 
