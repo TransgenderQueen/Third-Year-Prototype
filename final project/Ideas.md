@@ -31,16 +31,41 @@ Idea 4 - Spy game
 
 
 
+
+
  # Soulslike Game
 
  ## Movement
  - The game would be quite fast paced, pushing you through the open world and keeping enemies around, ready for you to fight whenever you wish.
- - 
+ - There would be a jump, roll and slide, as well as a medium ranged teleport used to dodge moves.
 
 
  ## Combat
+ - The combat will be designed to fun, fast and satisfying. I want to enforce players and make them want to carry on as well as reinforce replayability. We need enemies that will not be too frustrating to fight, as well as satisfying to beat.
+ - The essance of souls-like games is that they will be hard, but rewarding in the long run. Once you beat a boss, they drop something that will give you a big boon or some satisfying reward.
+
 
  ## Player Character
+ - Player stats. I want HP, Stamina (not including sprinting) and other statistics that will allow you to change how you fight                                                                                                                                                                                                                                                      
 
  ## Weapons
 
+
+
+
+Dialed back scope
+
+A game between Genshin and Elden Ring
+
+Aspects from elden ring
+combat, lock on system, 
+
+Aspects from genshin
+weapon system, weappn stats
+
+<br>
+
+
+
+---
+---
