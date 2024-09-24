@@ -11,8 +11,6 @@ Markdown works likes discord.
 
 ~  ~Is Strikethru~
 
-
--
--Is list
--and list
--and list
+- Is list
+- and list
+- and list
