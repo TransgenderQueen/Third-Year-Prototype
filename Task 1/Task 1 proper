@@ -39,6 +39,21 @@ void SortByValue(std::vector<Item>& items, bool ascending = true) {
         std::sort(items.begin(), items.end(), [](const Item& a, const Item& b) { return a.value > b.value; });
 }
 
+// Function to add a new item to the inventory
+void AddItem(std::vector<Item>& items) {
+    std::string name;
+    int value;
+
+    std::cout << "Enter item name: ";
+    std::getline(std::cin, name);
+    std::cout << "Enter item value: ";
+    std::cin >> value;
+    std::cin.ignore(); // Clear the newline character from the input buffer
+
+    items.emplace_back(name, value);
+    std::cout << "Item added: " << name << " with value " << value << std::endl;
+}
+
 
 void bubbleSort(std::vector<Item>& items, bool (*compare)(const Item&, const Item&)) {
    size_t n = items.size();
@@ -85,7 +100,11 @@ int main()
         Item("Helmet", 80),
         Item("Mithril Plate Armour", 2000)
     };
-
+    
+    
+    // Add a new item
+    AddItem(items);
+    
     std::cout << "Original Inventory:" << std::endl;
     DisplayInventory(items);
 
