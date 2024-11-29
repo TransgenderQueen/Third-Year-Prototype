@@ -47,7 +47,7 @@ public:
     {
         Character* character = new Character(name, charClass);
 
-        // Task for student: Implement factory logic to create character with different stats based on class
+        // 
         switch (charClass)
         {
         case CharacterClass::Warrior:
@@ -91,10 +91,12 @@ public:
 
         case CharacterClass::Paladin:
             character->willpower = 8;
+            character->endurance = 10;
             break;
 
         case CharacterClass::Cleric:
             character->willpower = 88;
+            character->intelligence = 9;
             break;
 default:
             character->strength = 0;
@@ -120,6 +122,7 @@ public:
     }
 };
 
+//decorators for each item. 
 class SwordDecorator : public CharacterDecorator
 {
 
@@ -130,6 +133,7 @@ public:
     }
 };
 
+//Shield Decorator
 class ShieldDecorator : public CharacterDecorator
 {
 
@@ -140,6 +144,7 @@ public:
     }
 };
 
+//Ring Decorator
 class RingDecorator : public CharacterDecorator
 {
 
@@ -150,8 +155,8 @@ public:
     }
 };
 
-// Task for student: Implement a concrete decorator (e.g., EnchantedArmor, SpecialWeapon) to modify character stats
 
+// Task for student: Implement a concrete decorator (e.g., EnchantedArmor, SpecialWeapon) to modify character stats
 int main()
 {
     // Task for student: Create a character using the factory and apply decorators
