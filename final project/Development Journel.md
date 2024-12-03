@@ -3,9 +3,6 @@
 
 <br>
 
-<iframe src = "https://trello.com/b/0r9vNMYR" frameBorder="0" width="50%" height="300"> </iframe>
-
-
 # Week One
 
 ## Colour Blindness
@@ -91,4 +88,97 @@ For the respawn system I wanted to use one that had the iconic 'You Died' System
 
 I wanted to stick as close to the orginal source as possible. This was done by creating a new User Interface that would pop up when a player died. This would then call up the small animtion I had created for the UI, the black bar and red text showing up for a moment before vanishing. This UI is then instantly killed as it is no longer necessary.
 
+---
 
+<br>
+<br>
+
+# Week 2
+
+### Controller Support
+ - Controller support became an issue. Playstation Crontrollers were unuseable after Unreal Engine 5. Controllers require a plugin that has not been updated, and therefore is very unreliable. So after long enough of attempting to fix the issues, I had to give up with playstation four or five controllers.
+ - However, I also had plans to use Xbox controllers, which are supported by Windows, and therefore are easy to set up with controller. After this, all I needed to do was to make a bunch of extra input actions for every single button, which didnt take long at all.
+
+---
+
+### Player UI
+ - Created the UI
+ - Made a simple health bar, with plan to add the stamina bar in the future. I then also added the visal of an Estus Flask as a tempory object for the prototype, which i will have to amend in the future. Since then I also added in a small image above the health flask to show what weapon the player had equipped.
+ ---
+
+ ### Research
+ ---
+ - For this week I resarched the Minecraft modpack 'Vault Hunters'. It is a modpack based around looting dungeons for new weapons, resources and upgrades for your Minecraft world. One of the key features is the randomized gear, which you can gain gear from little crates, or random enemy or chest drops from the vaults. 
+ - The randomized gear can have different status effects, from higher damage, to quicker attack speed. The full list is;
+    * Attack Damage
+    * Attack Speed
+    * Durability
+    * Chaining
+    * Soul Chance
+    * Effect Clouds
+    * Effect Chance
+
+- These can be found or crafted, with percentage chances on the modifiers on the weapons. The amount of modifiers and the percentage of the modfiers are effected by the rarity of the weapon itself. I looked at thse weapons and thought it could be a unique and interesting way to fight enemies, making it a unique game. 
+- An example of this could be: I have an element called Frost, when you hit an enemy with a weapon imbued by frost, they will slow by a certain amount.
+- When hit, they will have a build up of frost, for this example i will say it is a build of of 33% a hit. 
+  * Hit 1 - 33% build up, 33% slowed
+  * Hit 2 - 66% build up, 66% slowed
+  * Hit 3 - 99% build up, 99% slowed
+  * Hit 4 - 100% build up, 100% slowed
+- When it hits 100% build up, It will trigger a further status effect. In this example it is shatter, which will deal a percentage of damage to the enemy, chnging based on resistances.
+---
+
+<br>
+<br>
+
+# Week ;3
+
+:3
+
+random weapon system
+
+
+
+# Week 4
+
+basic enemy
+enemy attacking system
+
+
+# Week 5
+
+Lock on system
+
+
+# Week 6 
+ 
+ weapon affliction system
+
+# Week 7
+
+doging
+testing
+
+# Week 8
+
+testing
+
+dungeon making.
+
+# week 9
+testing
+
+
+
+
+<br>
+<br>
+<br>
+
+ # Bibliography
+---
+ https://vaulthunters.gg/ 
+
+
+ https://www.sololearn.com/en/ 
+ :3
