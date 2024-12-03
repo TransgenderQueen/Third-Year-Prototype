@@ -1,12 +1,12 @@
 
-# Souls-like Impact
+# Soulslike Impact
 
 <br>
 
 <iframe src = "https://trello.com/b/0r9vNMYR" frameBorder="0" width="50%" height="300"> </iframe>
 
 
-
+# Week One
 
 ## Colour Blindness
 
@@ -54,17 +54,16 @@
 ## Weapons
 ### Weapon Types
 ---
-- There will be a few different types of weapons, each with their own set of animations. These types are:
+There will be a few different types of weapons, each with their own set of animations. These types are:
   * Swords, which have very short range
   * Spears, which have a long range, but only stab
   * Scyhes, which have a long range, slashing at the enemie(s)
   * Greatsowrds, which have a medium range, slashing the enemie(s)
-- Alongside this, there will be a diferent type of stats for each weapon.
+Alongside this, there will be a diferent type of stats for each weapon.
 ----
 ### Weapon Stats
 ---
- - Each weapon will have three main Stat - Damage, Attack Speed and Stamina Drain. All of which are rather easy to understand what they will do.
-  - I will also have different stats for different weapon types, some can be shared, others cannot.
+ Each weapon will have three main Stat - Damage, Attack Speed and Stamina Drain. All of which are rather easy to understand what they will do. I will also have different stats for different weapon types, some can be shared, others cannot.
   - Shared stats;
      * Bleed
      * Slowness
@@ -76,3 +75,20 @@
     * Fire,
     * Lifesteal,
  - Greatsword Stats;
+
+
+
+
+
+## Research
+
+## Respawn System
+
+For the respawn system I wanted to use one that had the iconic 'You Died' System from all the soulslike games. this will include a slow death animation from the character, before the dark bar appears on screen, with the 'You Died' text.
+
+![![DarkSouls You Died Screen](image.png)](image.png)
+*Figure 1. Shows an example of a death screen from the game Dark Souls One.*
+
+I wanted to stick as close to the orginal source as possible. This was done by creating a new User Interface that would pop up when a player died. This would then call up the small animtion I had created for the UI, the black bar and red text showing up for a moment before vanishing. This UI is then instantly killed as it is no longer necessary.
+
+
