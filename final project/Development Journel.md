@@ -1,9 +1,12 @@
 # Soulslike Impact
 <br>
 
+
 # Week One
 
+
 ## Colour Blindness
+
 
 - Different colour blindness can perceive colours differently.
 - Symbols are a main way to show differences. Caduceus for health, or a heart symbol
@@ -13,6 +16,7 @@
 ---
  <br>
  <br>
+
 
 ## Controller Support
 
@@ -42,16 +46,11 @@
    * Dodge (Tap the sprint button while moving.)
 
 
-
-
  - Soulslike games put emphasis on timing and being careful with movements. So This is what I am using for my movement system. I want it to be very similar, so there will be fewer movement options.
  - However, Like other soul-like games, I will be including a lock-on system, which makes it a little easier for people in games such as this, where enemies have such large and coordinated movements.
 ---
  <br>
  <br>
-
-
-
 
 ## Weapons
 ### Weapon Types
@@ -78,20 +77,14 @@ Alongside this, there will be a different type of stats for each weapon.
     * Lifesteal,
  - Greatsword Stats;
 
-
-
 ## Research
 
-
 ## Respawn System
-
-
 
 For the respawn system I wanted to use one that had the iconic 'You Died' System from all the soulslike games. This will include a slow death animation from the character, before the dark bar appears on screen, with the 'You Died' text.
 
 ![![DarkSouls You Died Screen](image.png)](image.png)
-*Figure 1. Shows an example of a death screen from the game Dark Souls One.*
-
+*Figure 1. Shows an example of a death screen from the game Dark Souls One(2013).*
 I wanted to stick as close to the original source as possible. This was done by creating a new User Interface that would pop up when a player died. This would then call up the small animation I had created for the UI, the black bar and red text showing up for a moment before vanishing. This UI is then instantly killed as it is no longer necessary.
 
 ---
@@ -101,23 +94,20 @@ I wanted to stick as close to the original source as possible. This was done by 
 
 # Week 2
 
-
 ### Controller Support
  - Controller support became an issue. Playstation controllers were unusable after Unreal Engine 5. Controllers require a plugin that has not been updated and therefore is very unreliable. So after long enough of attempting to fix the issues, I had to give up with PlayStation four or five controllers.
  - However, I also had plans to use Xbox controllers, which are supported by Windows, and therefore are easy to set up with the controller. After this, all I needed to do was to make a bunch of extra input actions for every single button, which didn't take long at all.
 
 ---
 
-
 ### Player UI
  - Created the UI
  - Made a simple health bar, with the plan to add the stamina bar in the future. I then also added the visual of an Estus Flask as a temporary object for the prototype, which I will have to amend in the future. Since then I also added a small image above the health flask to show what weapon the player had equipped.
  ---
 
-
  ### Research
  ---
- - For this week I researched the Minecraft modpack 'Vault Hunters'. It is a mod pack based around looting dungeons for new weapons, resources and upgrades for your Minecraft world. One of the key features is the randomized gear, which you can gain gear from little crates, or random enemy or chest drops from the vaults.
+ - For this week I researched the Minecraft modpack 'Vault Hunters (Iskallia)'. It is a mod pack based around looting dungeons for new weapons, resources and upgrades for your Minecraft world. One of the key features is the randomized gear, which you can gain gear from little crates, or random enemy or chest drops from the vaults.
  - The randomized gear can have different status effects, from higher damage, to quicker attack speed. The full list is;
     * Attack Damage
     * Attack Speed
@@ -126,7 +116,6 @@ I wanted to stick as close to the original source as possible. This was done by 
     * Soul Chance
     * Effect Clouds
     * Effect Chance
-
 - These can be found or crafted, with percentage chances on the modifiers on the weapons. The amount of modifiers and the percentage of the modifiers are affected by the rarity of the weapon itself. I looked at these weapons and thought it could be a unique and interesting way to fight enemies, making it a unique game.
 - An example of this could be: I have an element called Frost, when you hit an enemy with a weapon imbued by frost, they will slow by a certain amount.
 - When hit, they will have a build-up of frost, for this example, I will say it is a build-up of 33% a hit.
@@ -158,18 +147,13 @@ I wanted to stick as close to the original source as possible. This was done by 
  - Each weapon will have different Stats, and different weapon types have different status effects. The common weapons will have very basic stats, having a maximum of ten damage.
  <br>
  <br>
-
-
  ![A picture of the weapon damage function.](image-2.png)
 *Figure 2. Shows a picture of the weapon damage function, and it shows the way it is set up.*
 ---
 <br>
-
-
 - This same setup is how I have created the rest of the weapon stats. I got a rarity, gave it a max and a minimum number for the stat and got a randomized number. Each of the rarities has increasingly higher numbers for the stats.
 - The chaos tier is different, however. Inspired by a friend, I decided to create a tier that was quite literally 1-100. These weapons could have 1 Damage, but 100 attack speed.
-- When it comes to the additional statuses on the weapon, I originally had the idea of having a random number of stats, so a weapon could potentially have effects such as Bleed, frost and life steal on it. However thinking about this, it would be far too overpowered, especially for a game inspired by games such as Dark Souls, which are notoriously difficult.
-
+- When it comes to the additional statuses on the weapon, I originally had the idea of having a random number of stats, so a weapon could potentially have effects such as Bleed, frost and life steal on it. However thinking about this, it would be far too overpowered, especially for a game inspired by games such as Dark Souls(2013), which are notoriously difficult.
 
 <br>
 <br>
@@ -179,9 +163,7 @@ I wanted to stick as close to the original source as possible. This was done by 
 - I couldn't find any solution to this issue, nor could I figure out any way to get the structs to work. So in the end I simply made the variables themselves and gave them to the player, with plans to have other weapons be sent to separate actors with the individual stats. This works now, as I can set new weapons.
 - In the full game, I will modify the spawner so that it creates weapons that are considered Actors so that the player can have full control of what weapon they are currently using.
 
-
 <br>
-
 
 # Week 4
 
@@ -194,31 +176,19 @@ I wanted to stick as close to the original source as possible. This was done by 
 <br>
 - Originally, I had no delay between the animations, at which point I found out that the enemy could attack me as quickly as there were frames. This was found out in the first test, when an enemy dealt too much damage to me, an issue that was quickly fixed.
 
-
-
-
 <br>
-
-
 
 # Week 5
 
 ## Lock on system
 
-
 - For my game, I decided to use a lock-on system for the enemy. This means that no matter where the enemy is, the camera will always lock on to the enemy, and will face. I took inspiration from other games that have similar features.
-
-
 - Some games like the Souls games have a hard lock-on, in which you have to actively select the enemy you wish to lock onto and target. However other games such as Dragon Age: Veilguard has a soft lock on. It doesn't restrict your camera and will allow you to look freely around. However, in the interest of attacking, it will lock you onto one character, that you can easily look away from.
-
-
 - The system itself is rather simple. All I had to do was to create an input to lock on. Tab on PC, and press in on the camera joycon on the controller. These, I have found, are often normal controls for this type of system.
 - When pressed, it will send a sphere trace. The starting point will be the player, the endpoint will be the camera direction, set a distance away from the user. Once it finds an enemy, it will set the rotation of the camera to be facing the target.
 - I did find, however, that in most cases all you would be able to see is simply behind the player, so I made sure the camera was slightly elevated so that it was always possible to see enemies directly in front of you.
 
-
 <br>
-
 
 # Week 6
  
@@ -236,13 +206,10 @@ I wanted to stick as close to the original source as possible. This was done by 
   * Once hit, it will deal damage to the enemies and allow the player to move.
   * Then the system would say you are no longer attacking.
 
-
 - Here I once again used anim montages. This is for future support. In the future, I plan on adding more animations for basic attacks, as well as different weapons.
 - Each weapon will have its own moveset, as well as its own special attacks. At the moment I only have one type of weapon and one moveset, but plan to have multiple more.
 
-
 <br>
-
 
  ## Weapon Affliction system
  - The weapon affliction system was nice and simple.
@@ -255,50 +222,104 @@ I wanted to stick as close to the original source as possible. This was done by 
     * Bleed will damage the enemy for a percent of their remaining health.
 - However, most of these do not have functionality. This is due to the fact that I overestimated the time that making the weapon rarity system would take, as I kept rewriting the system.
 
-
 <br>
 <br>
-
-
-
 
 # Week 7
 
-
 ## Dodging
-
-
 - I wanted a dodge that was functionally similar to a roll, where for a few moments you will be invincible. So that you dodge out of the way of attacks.
 - However, I wanted to do a quick dash out of the way instead of a dodge. I chose that it would work as such:
   * You go invisible
   * You dash forward
   * You become visible.
-
-
 - When making this, I encountered a simple issue. Instead of dashing the way the player was facing, you would dash in a single direction, no matter what direction you were facing.
 - This was due to the fact I was using the capsule component, which didn't change directions. To fix this I would then quickly add an arrow to the player. I got the world location and forward vector, multiplied by 25, before adding to the player's current world location. This then worked, allowing me to get the direction the player was facing.
-- I didn't want this to work via the camera, as when playing on the controller it can be quite slow. And when needing to press at a moment's notice, having it based on the direction you are moving is a lot more pleasing for the player's experiance.
+- I didn't want this to work via the camera, as when playing on the controller it can be quite slow. And when needing to press at a moment's notice, having it based on the direction you are moving is a lot more pleasing for the player's experience.
 
-
-
-
+<br>
 
 # Week 8
 
-testing
 
-dungeon making.
+## Testing
+
+
+ - It was at this point where I would get some testers to test this for me. I got a total of
+ three testers who had never played a game like this, to come and try it.
+ - I got a little bit of feedback, most of which caused a lot of things that I needed to update and tweak. The list being:
+    * Attacking feels slow.
+    * The enemies can always hit you, no matter what
+    * The health potions didn't work
+    * The attacks sometimes didn't hit.
+
+
+- All of this was good feedback as it allowed me to at least fix some major issues.
+- Additionally, it let me know that the game worked, the testers told me what they would like to see, as well as how
+easily they could understand the controls.
+
+## Dungeons
+
+- For my game, I wanted dungeons that players could easily traverse and fight their way through to get new weapons
+- The enemies are all very basic, but in the dungeons there can be enemies that can swarm the player, encouraging them to
+play carefully.
+- I made three dungeons, all with at least one room, with a portal to the main level, as well as what will be a loot chest in the
+future. All of the dungeons needed a way to spawn the enemies. I created a spawner that would get a number between a preset range.
+It would then check if the current amount spawned was equal to the number, and keep spawning until it was. However, I noticed an issue with this.
+Sometimes, the spawner would just spawn an infinite amount of enemies, constantly making sure the player could never progress.
+- The issue was that the random number generator would constantly give a new number when checking against it, and sometimes would never hit the intended number.
+This was simply fixed by the fact that I would set the random number before the loop started. This made sure the function worked correctly.
+- I then also made a variant of this spawner that would spawn in a boss.
+
+
+- An additional feature is the door to progress. If the player walks into it, and there are still enemies left, it will not allow the player to progress.
+However, if there are no enemies left, or the Bosses health is 0, then the door will open, allowing the player to head inside.
+
+<br>
 
 # week 9
-testing
 
-others
+## Major Issues
 
-healing
+- So, here I was going to fix some of the major issues with the game. The issues were:
+    * Enemies could hit you from anywhere
+    * Sometimes the weapon wouldn't hit
+    * The randomised weapons were not randomizing.
+---
+- Thankfully these issues were rather easy to fix as it turned out.
+- For the weapon not being able to hit, it seemed to be because the sphere trace I made for the weapons was simply too
+small, meaning that I needed to increase the size. Thankfully it worked, so the weapon will now reliably hit.
+- The randomized weapons not working was a simple fix. I had to send the data to the player itself, rather than saving it in a
+struct, which should have worked. But regardless it now works, allowing me to easily access it with no issue. I did speak about it
+up above, but thought I would mention it at the point I discovered the issue.
 
-issues
 
-what i plan to do.
+- Finally, the other major issue was the enemies being able to hit from anywhere. This, of course, is an issue.
+What was happening is that the enemy AI was moving as close as it could, before then stopping and playing the animation.
+- Due to this, the animation would play and instantly hit the enemy. So, I instead made a sphere trace on their hands.
+This means that if the enemy is close enough and tries and attack, the attack wouldn't be registered unless they actually hit the player.
+- Thankfully the new system works wonders, as it also stops the enemies.
+- This allowed me to identify an issue. I have the spawners for enemies set up as a box collision to spawn in when the player
+passes though. However, this didn't quite work as the enemies had sphere collisions around them where the enemies would
+show their UI to the player. As it turns out, this collision would hit the trigger and would start enemies up at the next arena.
+This was a rather large issue since the player would be soft-locked, unable to move on without killing the
+enemies in the next room that they would be unable to get to.
+
+<br>
+
+# Future steps
+
+- I like how much progress I have made. I like where the current game is at and how much more I need to work on.
+ - I have a small list of what I would like to do for the next phase of making the game:
+    * Add sound
+    * Add more weapons
+    * Add weapon crafting
+    * Add more animations
+    * More unique enemies and bosses, as well as refined mechanics.
+    * Add player stats.
+    * Add one large playable level.
+- Ultimately I think these things are all very doable for the next steps of my game. Additionally, I made sure I gave myself
+some things to allow for flexibility for the future of my game, e.g. using anim montages for more animations and different animations.
 
 
 <br>
@@ -307,8 +328,8 @@ what i plan to do.
 
  # Bibliography
 ---
- https://vaulthunters.gg/ 
+Iskallia (no date) Vault hunters, Vault Hunters. Available at: https://vaulthunters.gg/ (Accessed: 05 December 2024). 
 
-
+‘Dark souls’ (2013). San Jose, CA: Namco Bandai Games America Inc. 
  
  :3
