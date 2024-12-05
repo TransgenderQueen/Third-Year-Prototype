@@ -494,6 +494,17 @@ int ExponentialSearch(const std::vector<Spell>& spells, const std::string& keywo
 <br>
 <br>
 
+# Task 6
+
+## Research
+
+- This was the task that I felt most confident on at first, the idea being pretty simple.
+- Originally I was looking at Minecraft as an example, to see if I could gain any ideas from it.  However, as I continued to look, I found absolutly nothing. No one had any in depth explanation. The closetest I could could find was:
+  * 
+
+<br>
+
+
 # Week 7
 
 ## Dodging

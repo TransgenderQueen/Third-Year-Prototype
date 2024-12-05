@@ -1,0 +1,87 @@
+#include <iostream>
+#include <vector>
+
+// Struct for entity data (position and velocity)
+struct EntityData
+{
+	float positionX;
+	float positionY;
+	float positionZ;
+	float velocityX;
+	float velocityY;
+	float velocityZ;
+
+	EntityData(float posX, float posY, float posZ, float velX, float velY, float velZ)
+		: positionX(posX), positionY(posY), positionZ(posZ), velocityX(velX), velocityY(velY), velocityZ(velZ) {}
+};
+
+// Movement system class
+class MovementSystem
+{
+public:
+	// Store the entities' data in a vector
+	std::vector<EntityData> entities;
+
+	// Separate vectors for position and velocity
+	std::vector<float> currentPositionsX;
+	std::vector<float> currentPositionsY;
+	std::vector<float> currentPositionsZ;
+	std::vector<float> currentVelocityX;
+	std::vector<float> currentVelocityY;
+	std::vector<float> currentVelocityZ;
+
+	// Add an entity to the system
+	void AddEntity(float posX, float posY, float posZ, float velX, float velY, float velZ)
+	{
+		// Store the entity's data
+		entities.push_back(EntityData(posX, posY, posZ, velX, velY, velZ));
+	}
+
+	 // Task for student: Implement this function to update the positions of all entities based on their velocities
+	void UpdatePositions(float deltaTime)
+	{
+		  // Implement logic to update the positions of all entities using their velocity and deltaTime
+		int numOfEntities = entities.size();
+
+		for (int i = 0; i < numOfEntities; ++i)
+		{
+			// Update the position of each entity based on its velocity and deltaTime
+			entities[i].positionX += entities[i].velocityX * deltaTime;
+			entities[i].positionY += entities[i].velocityY * deltaTime;
+			entities[i].positionZ += entities[i].velocityZ * deltaTime;
+		}
+	}
+
+	// Function to print the positions of all entities
+	void PrintPositions()
+	{
+		int numOfEntities = entities.size();
+
+		for (int i = 0; i < numOfEntities; ++i)
+		{
+			std::cout << "Entity " << i + 1 << " Position: X=" << entities[i].positionX
+			          << ", Y=" << entities[i].positionY << ", Z=" << entities[i].positionZ << std::endl;
+		}
+	}
+};
+
+int main()
+{
+	MovementSystem movementSystem;
+
+	// Add some entities to the system
+	movementSystem.AddEntity(0, 0, 0, 1, 0, 0);
+	movementSystem.AddEntity(1, 2, 3, 0, 1, 0);
+	movementSystem.AddEntity(5, 5, 5, 0, 0, 1);
+	movementSystem.AddEntity(20, 10, 10, 1, 1, 1);
+
+	// Simulate multiple frames
+	for (int frame = 0; frame < 6; frame++)
+	{
+		std::cout << "\nFrame " << frame + 1 << std::endl;
+		movementSystem.PrintPositions();    // Print current positions
+		movementSystem.UpdatePositions(0.016f);  // Update positions with deltaTime (16ms per frame)
+	}
+
+	return 0;
+}
