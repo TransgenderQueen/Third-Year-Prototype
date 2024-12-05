@@ -92,6 +92,61 @@ I wanted to stick as close to the original source as possible. This was done by 
 <br>
 <br>
 
+# Task 1
+---
+### Research
+--- 
+- For this task I assumed that a bubble sort would be best. It was the best for small sets of data and would be much quicker than any other type of sort.
+- However found a sort algorithm that is built into C++. 
+- std::sort in C++ is a highly optimized sorting function that typically uses a hybrid algorithm called Introsort. Introsort begins with Quicksort for efficient average-case performance (O(nlog⁡n)O(nlogn)), but if the recursion depth exceeds a certain threshold (indicating that the data may be poorly partitioned), it switches to Heapsort to ensure the worst-case time complexity remains O(nlog⁡n)O(nlogn). For small datasets, std::sort may also use Insertion Sort for better performance. Overall, it is designed to provide fast and reliable sorting across a wide range of data types.
+
+<br>
+
+### Bubble sorts
+---
+- Bubble Sort is a simple sorting algorithm that repeatedly compares adjacent elements in a list and swaps them if they are in the wrong order. This process continues until the list is fully sorted. Its time complexity is O(n2)O(n2) in the worst and average cases, making it inefficient for large datasets, but it has a best-case time complexity of O(n)O(n) if the list is already sorted. Despite its inefficiency, Bubble Sort is easy to implement and works in-place, meaning it requires minimal additional memory.
+
+<br>
+
+## Outcome of the task
+- Ultimatly this task was made much easier by using the code. It was very much easier to use the std::sort.
+- I think I saved a lot of time compared to using a bubble sort. Instead of being done in a few lines, it took me 8 lines total to write the sorting for both items in both orders. Thankfully it was done very easily. 
+
+
+``` 
+Void SortByName(std::vector<Item>& items, bool ascending = true){
+    if (ascending)
+        std::sort(items.begin(), items.end(), [](const Item& a, const Item& b) { return a.name < b.name; });
+    else
+        std::sort(items.begin(), items.end(), [](const Item& a, const Item& b) { return a.name > b.name; });
+} 
+```
+
+- I then wanted to test this, to see if I could input my own items and have them also be ordered correctly. I also wanted to see if there were any flaws with it. Thankfully the system proved me right, and so ordered items easily.
+
+``` 
+// Function to add a new item to the inventory
+void AddItem(std::vector<Item>& items) {
+    std::string name;
+    int value;
+
+    std::cout << "Enter item name: ";
+    std::getline(std::cin, name);
+    std::cout << "Enter item value: ";
+    std::cin >> value;
+    std::cin.ignore(); // Clear the newline character from the input buffer
+
+    items.emplace_back(name, value);
+    std::cout << "Item added: " << name << " with value " << value << std::endl;
+}
+``` 
+
+<br>
+
+---
+
+---
+
 # Week 2
 
 ### Controller Support
@@ -129,6 +184,45 @@ I wanted to stick as close to the original source as possible. This was done by 
 <br>
 <br>
 
+# Task 2
+---
+
+### Research
+---
+- Waterfall: A linear, sequential approach where each phase (requirements, design, implementation, testing, maintenance) is completed before moving on to the next. It's structured but inflexible.
+
+-  Agile: An iterative, flexible approach focused on collaboration, continuous improvement, and delivering small, incremental updates. It emphasizes adaptive planning and customer feedback. Popular frameworks include Scrum and Kanban.
+
+-  Scrum: A subset of Agile, Scrum divides development into short, time-boxed iterations called sprints. It emphasizes roles (Product Owner, Scrum Master, and Development Team) and regular meetings (daily stand-ups, sprint reviews).
+
+-  DevOps: Focuses on collaboration between development and IT operations to automate the processes of software development, testing, deployment, and monitoring, aiming for continuous integration and delivery (CI/CD).
+
+-  Extreme Programming (XP): An Agile-based methodology that emphasizes technical excellence, continuous feedback, and close collaboration between developers and customers. It advocates practices like pair programming, test-driven development (TDD), and frequent releases.
+
+-  Lean: Originating from manufacturing, Lean software development focuses on maximizing customer value while minimizing waste. It emphasizes efficiency, continuous improvement, and faster delivery of smaller features.
+
+Each methodology has its own strengths, and the choice depends on project size, complexity, and team dynamics.
+
+<br>
+
+## Outcome of the Task
+
+- Here I decided to use the Agile methodology system. It would make it a lot more flexible and allow for plenty of feedback.
+- Additionally it allows for any changes to be made easily.
+- https://trello.com/b/02gvXJEQ/educational-maths-game 
+- I created the Task on trello and added labels and time for testing for each developer.
+
+![ A image from trello showing off the devided segments](image-3.png)
+*Figure 2. Shows a picture from trello, showing the segements of the tasks.*
+
+- Ultimatly  I think this was a well done task. It also helped me organize how to do my own tasks and seperate them properly. 
+
+
+---
+---
+
+<br>
+
 # Week :3
 ---
 <br>
@@ -136,7 +230,7 @@ I wanted to stick as close to the original source as possible. This was done by 
 ## Randomized Weapons
 
  - The random weapon system is rather simple when made.
- - When you get to an actor that will be a chest, the player will use the interaction button. From there, the blueprint will begin to randomise the new weapons stats.
+ - When you get to an actor that will be a chest, the player will use the interaction button. From there, the blueprint will begin to randomize the new weapons stats.
  - The blueprint will first decide the weapon rarity, choosing from:
     * Common
     * Uncommon
@@ -148,7 +242,7 @@ I wanted to stick as close to the original source as possible. This was done by 
  <br>
  <br>
  ![A picture of the weapon damage function.](image-2.png)
-*Figure 2. Shows a picture of the weapon damage function, and it shows the way it is set up.*
+*Figure 3. Shows a picture of the weapon damage function, and it shows the way it is set up.*
 ---
 <br>
 - This same setup is how I have created the rest of the weapon stats. I got a rarity, gave it a max and a minimum number for the stat and got a randomized number. Each of the rarities has increasingly higher numbers for the stats.
@@ -165,6 +259,39 @@ I wanted to stick as close to the original source as possible. This was done by 
 
 <br>
 
+---
+---
+# Task 3
+---
+
+## Research
+- Greedy Algorithms: These algorithms make the locally optimal choice at each step with the hope of finding a global optimum. They are often used in optimization problems like the Knapsack Problem and Dijkstra's Algorithm for shortest paths.
+
+- Divide and Conquer Algorithms: These algorithms break a problem down into smaller sub-problems, solve them independently, and combine the results. Merge Sort and Quick Sort are examples that use this approach to efficiently sort data.
+
+## Outcome of the Task
+
+- This was rather simple, I needed to choose a algorithm to use. I used a Greedy alogithm as they would make the best choice at each step and are used for the shortest path. 
+- There was no point as trying to use a Devide and Conquer algorithm, as there was no reason to split up a simple task.
+
+```
+while (player.currentHealth <= player.maxHealth - lowestHeal)
+  {
+  std::cout << healthNeeded << std::endl;
+  while (healthNeeded >= potions[healthindex].healingValue)
+    {
+    numOfPotions++; healthNeeded = healthNeeded - potions[healthindex].healingValue;
+    player.currentHealth = player.currentHealth + potions[healthindex].healingValue;
+    }
+  healthindex++;
+```
+- This works, and I tried to add in a Supreme healing potion and a new character who only had 15 health. The system quickly adapted to the addition and healed the player!
+
+---
+---
+
+<br>
+
 # Week 4
 
 ## Basic enemies
@@ -178,7 +305,77 @@ I wanted to stick as close to the original source as possible. This was done by 
 
 <br>
 
-# Week 5
+---
+---
+
+# Task 4
+---
+
+## Research
+- For this task we were instructed work in pairs, as well as also use a language we were unfamilliar with. So, that meant I had to learn how to do C#
+- This provided a problem for me, so we went to look for new information and ways to solve this.
+- Chat GPT helped provide useful insight to this, allowing us to figure out how we could solve it.
+
+
+How Dialogue Trees Work:
+
+    Root and Nodes:
+        A dialogue tree begins with a root node: this is where the conversation starts.
+        Each node in the tree represents a point in the dialogue, often showing what a character says.
+        Each node has one or more edges (branches), leading to new nodes based on the player's choices.
+
+    Player Choices:
+        After each piece of dialogue, the player is given a set of choices (typically shown as a list of options).
+        Each choice leads to a different node, which may either provide more information or branch further into new dialogue options.
+
+    Branching:
+        As the player progresses through the dialogue tree, the conversation branches off depending on the choices made. Some paths may loop back to previous nodes, while others lead to unique outcomes or new nodes.
+        In complex trees, decisions can affect the game or story in different ways (e.g., changing character relationships, unlocking secrets, or influencing the narrative's outcome).
+
+    Endings or Outcomes:
+        At the end of some branches, the dialogue may conclude, and the player returns to the main flow of the game.
+        In some cases, choices can lead to multiple endings or unlock specific quests, creating a non-linear experience.
+
+## Outcome of the task
+
+- Ultimatly the outcome for the task was quite simple. Once we had gotten the basics down, it became much easier to make more.
+- We broke what we had to do down into pseudo code, before then writing it up in code.
+
+```
+   // Example of building the dialogue tree:
+        DialogueNode introduction = new DialogueNode("Hello! How can I help you today?");
+        DialogueNode weather = new DialogueNode("The weather is great! It's sunny outside.");
+        DialogueNode directions = new DialogueNode("You need to head north and then turn left.");
+        DialogueNode goodfarewell = new DialogueNode("Goodbye! Have a nice day.");
+        DialogueNode badfarewell = new DialogueNode("bye. Have a day.");
+        DialogueNode rudefarewell = new DialogueNode("Wow! Fuck off");
+
+        // Add choices to the root node
+        introduction.AddChoice("Tell me about the weather.", weather);
+        introduction.AddChoice("I need directions.", directions);
+        introduction.AddChoice("Nothing, just passing by.", badfarewell);
+        introduction.AddChoice("Screw you!", rudefarewell);
+
+        // Add choices to the weather node
+        weather.AddChoice("Thanks!", goodfarewell);
+
+        // Add choices to the directions node
+        directions.AddChoice("Thanks for the directions!", goodfarewell);
+
+        // Now, set the root node in the DialogueSystem to the introduction
+        RootNode = introduction;
+        CurrentNode = RootNode; 
+```
+- This is what we wrote.
+- The tree starts with the introduction, giving the text before then directing the code to the next part. 
+- Then we can go to the directed part. 
+- If we want to end, we simply do not designate the next path foreward. 
+
+- I found this to be a rather simple way to create the trees. I liked this branching tree and thought iit was very nice to learn how to make. I would love to try and impliment this for a text based game in the future.
+ 
+<br>
+
+# Week 5 
 
 ## Lock on system
 
@@ -187,6 +384,78 @@ I wanted to stick as close to the original source as possible. This was done by 
 - The system itself is rather simple. All I had to do was to create an input to lock on. Tab on PC, and press in on the camera joycon on the controller. These, I have found, are often normal controls for this type of system.
 - When pressed, it will send a sphere trace. The starting point will be the player, the endpoint will be the camera direction, set a distance away from the user. Once it finds an enemy, it will set the rotation of the camera to be facing the target.
 - I did find, however, that in most cases all you would be able to see is simply behind the player, so I made sure the camera was slightly elevated so that it was always possible to see enemies directly in front of you.
+
+<br>
+
+---
+---
+
+# Task 5
+
+## Research
+- This was the task I had the most difficulty with. It was really confusing for me. I tried very hard to do this, and took forever.
+- Eventually I went to research different searches.
+- GeeksforGeeks was increadibly useful to help this, it helped me learn about 
+- Exponential Search (also known as Exponential Binary Search) Explanation:
+
+- Exponential Search is an efficient algorithm used to find the position of a target value within a sorted array or list. It works by first exponentially expanding the range of indices until it either exceeds the target value or finds a suitable range that contains the target. After that, it applies binary search within the identified range to find the exact position.
+Steps:
+
+ - Why use Exponential Search?
+    * Efficiency: Exponential search is especially useful when the target value is unknown and might be near the start of the array. By exponentially increasing the range, you can quickly find the region where the target might exist, then use binary search (which is more efficient than linear search) to locate the exact index.
+
+    * Exponential Search has a time complexity of O(log n), making it more efficient than a linear search (O(n)) but not quite as efficient as a pure binary search (O(log n)). However, it performs better in unsorted data with certain conditions or when the target is near the start.
+
+## Outcome of the task
+
+- This task was the hardest, but when I completed it I was increadibly happy.
+- However I am not particualrly happy with how I left it. While it works up to spec, I couldnt figure out how to make it work with only half done names. For example, if I put in 'Poison' it will simply come up with nothing. No matter how hard I tried, I couldnt get it working.
+
+-Reguardless, I was happy as to how I got the rest working, the exponentual search:
+
+```
+// Exponential Search function to find a spell by name
+int ExponentialSearch(const std::vector<Spell>& spells, const std::string& keyword) {
+	if (spells.empty()) return -1;
+
+	// Check the first element
+	if (spells[0].name == keyword) return 0;
+
+	int i = 1;
+	// Exponentially increase i until we find a range where spells[i] is greater than the keyword
+	while (i < spells.size() && spells[i].name < keyword) {
+		i *= 2;
+	}
+
+	// Perform binary search in the range [i/2, min(i, size-1)]
+	int low = i / 2;
+	int high = std::min(i, (int)spells.size() - 1);
+	while (low <= high) {
+		int mid = low + (high - low) / 2;
+		if (spells[mid].name == keyword) {
+			return mid;
+		}
+		if (spells[mid].name < keyword) {
+			low = mid + 1;
+		} else {
+			high = mid - 1;
+		}
+	}
+
+	return -1; // Spell not found
+}
+```
+- The search will get the word the player enters.
+- It will then begin to expand the range.
+- The binary search will begin, checking the first half of the range, before checking the second half
+- if not found within the range, it will expand and repeat.
+
+
+
+
+
+---
+---
 
 <br>
 
@@ -236,6 +505,73 @@ I wanted to stick as close to the original source as possible. This was done by 
 - When making this, I encountered a simple issue. Instead of dashing the way the player was facing, you would dash in a single direction, no matter what direction you were facing.
 - This was due to the fact I was using the capsule component, which didn't change directions. To fix this I would then quickly add an arrow to the player. I got the world location and forward vector, multiplied by 25, before adding to the player's current world location. This then worked, allowing me to get the direction the player was facing.
 - I didn't want this to work via the camera, as when playing on the controller it can be quite slow. And when needing to press at a moment's notice, having it based on the direction you are moving is a lot more pleasing for the player's experience.
+
+---
+---
+
+
+<br>
+
+# Task 7
+---
+
+## Research
+- For this task, it was once again a paired task. Together we tried to tackle this.
+- We had a website that gave us a brilliant example of how to create a cake using the decorator patten! 
+- After searching I was unable to find the same website, and so had to use chat GPT to give me the example.
+---
+- Decorator Pattern Explained Using a Cake Example:
+  * Basic Cake: Imagine you have a basic Cake class. This class might have methods like getCost() and getDescription().
+  * Decorator: Instead of modifying the Cake class directly, you use decorators. Each decorator adds a new feature to the cake, such as frosting, sprinkles, or layers of fruit.
+  * Example:
+        ChocolateFrostingDecorator might add the cost and description of chocolate frosting.
+        SprinklesDecorator might add sprinkles to the cake and update the description accordingly.
+
+- This allows you to create various combinations of cakes by stacking different decorators, each enhancing the base cake with new features.
+
+## Outcome of this task
+
+- One of the first requirements of the task was to create multiple classes. We did that very simply like so:
+
+```
+
+   character->strength = 10;
+            character->endurance = 7;
+            character->intelligence = 3;
+            break;
+
+        case CharacterClass::Rogue:
+            character->agility = 10;
+            character->luck = 7;
+            character->strength = 4;
+            break;
+
+```
+- This easily allows you to edit and make new classes. Its very simple.
+
+```
+    CharacterFactory* factory = new CharacterFactory();
+
+    Character* char1 = factory->CreateCharacter( myString, CharacterClass::Cleric);
+    char1->PrintCharacterInfo();
+
+    Character* charMod1 = new SwordDecorator(char1);
+    charMod1->PrintCharacterInfo();
+
+    Character* charMod2 = new ShieldDecorator(char1);
+    charMod2->PrintCharacterInfo();
+
+    Character* charMod3 = new RingDecorator(char1);
+    charMod3->PrintCharacterInfo();
+```
+- Here was how we set up the decorators. We made a new character that would then be set as the newest modified character. It would then print out the character and their stats, showing each modified output like so:
+
+![An image showing the name of the character Cayleen, and her six stats.](image-4.png)]
+*Figure 4. Showing an image of the newly created character and the stats being assigned and updated.*
+
+
+---
+---
 
 <br>
 
@@ -332,4 +668,10 @@ Iskallia (no date) Vault hunters, Vault Hunters. Available at: https://vaulthunt
 
 ‘Dark souls’ (2013). San Jose, CA: Namco Bandai Games America Inc. 
  
+https://www.geeksforgeeks.org/internal-details-of-stdsort-in-c/ 
+
+https://www.geeksforgeeks.org/bubble-sort-algorithm/
+
+https://www.geeksforgeeks.org/exponential-search/
+
  :3

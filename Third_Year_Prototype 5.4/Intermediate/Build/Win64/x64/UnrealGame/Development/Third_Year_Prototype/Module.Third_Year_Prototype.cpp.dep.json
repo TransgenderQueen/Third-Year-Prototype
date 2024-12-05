@@ -1,0 +1,14 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "d:\\uniwork\\3rd year\\uni-cheat-shiet\\third_year_prototype 5.4\\intermediate\\build\\win64\\x64\\unrealgame\\development\\third_year_prototype\\module.third_year_prototype.cpp",
+        "ProvidedModule": "",
+        "PCH": "d:\\uniwork\\3rd year\\uni-cheat-shiet\\third_year_prototype 5.4\\intermediate\\build\\win64\\x64\\third_year_prototype\\development\\core\\sharedpch.core.project.valapi.cpp20.h.pch",
+        "Includes": [
+            "d:\\uniwork\\3rd year\\uni-cheat-shiet\\third_year_prototype 5.4\\intermediate\\build\\win64\\x64\\unrealgame\\development\\third_year_prototype\\definitions.third_year_prototype.h",
+            "d:\\uniwork\\3rd year\\uni-cheat-shiet\\third_year_prototype 5.4\\intermediate\\source\\third_year_prototype.cpp"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}
