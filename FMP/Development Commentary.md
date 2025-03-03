@@ -12,7 +12,7 @@
 ### Game Sources
 
 
-The first game is Mount and Blade: Bannerlord II. The crafting system in the weapons is quite in depth. The higher teir weapon you wish to craft, the rarer the recourses to craft it become.
+The first game is Mount and Blade: Bannerlord II(Mount&Blade II Bannerlord - TaleWorlds Entertainment, s.d.). The crafting system in the weapons is quite in depth. The higher teir weapon you wish to craft, the rarer the recourses to craft it become.
 
  - I am looking at this game as I heard that people really enjoyed the crafting system, especially as it felt fun to use.
 
@@ -30,4 +30,24 @@ Additionally I have also looked at Vault Hunters. This is a Minecraft modpack wh
 
 ### Documentation Sources
 
+- First off, I found a very nice video talking about making video documentatoo
+
+
 ---
+
+
+
+
+## Bibliography
+
+- Mount&Blade II Bannerlord - TaleWorlds Entertainment (s.d.) At: https://www.taleworlds.com/en/games/bannerlord# (Accessed  03/03/2025).
+
+- Iskallia (s.d.) Vault Hunters. At: https://www.vaulthunters.gg (Accessed  03/03/2025).
+
+- How To Make Gamepad Navigation For Menu/UI Widgets In Unreal Engine 5 (2024) At: https://www.youtube.com/watch?v=RdaAVTMIg08 (Accessed  03/03/2025).
+
+- Unreal Engine 4 Tutorial - Survival Game Part 10: Crafting Setup (2022) At: https://www.youtube.com/watch?v=Clfqu46vGfM (Accessed  03/03/2025).
+
+- 
+
+- 
