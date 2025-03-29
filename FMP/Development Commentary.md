@@ -37,7 +37,11 @@ The first game is Mount and Blade: Bannerlord II(Mount&Blade II Bannerlord - Tal
 
 <br>
 
-Additionally I have also looked at Vault Hunters. This is a Minecraft modpack which focuses on dungeon running. Inside of the Vaults you are able to find weao
+Additionally I have also looked at Vault Hunters. This is a Minecraft modpack which focuses on dungeon running. Inside of the Vaults you are able to find weapons and items that can allow you to change current weapons.
+
+- I like the design of the game that forces you to explore and keep trying untill you gain an item. 
+- It ensures the player has to try and try in order to and gain what they want in order to potentially uprade their weapons. This means that the player will constantly play to get better. 
+- I will not copy everything from this game, as that would be far too unoriginal. In my game I wish to take ideas from this system. For example, items to reset the stats of weapons. When made in combonation with the ideas from Mount and Blade: Bannerlord II(Mount&Blade II Bannerlord - TaleWorlds Entertainment, s.d.), it shall end up as an interesting system
 
 ### Academic Sources
 
