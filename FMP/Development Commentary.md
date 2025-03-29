@@ -55,13 +55,23 @@ Additionally I have also looked at Vault Hunters. This is a Minecraft modpack wh
 ## Implementation
 
 ### Process
+For my project, I needed to create a system that allowed me to reroll for a wepaons stats. This meant that I needed to call only a certain part of the system that created the stats, while ignoring the system that allowed the weapons rarity amd weapon type.
+
+(Insert image here)
+<br>
+However, as I went to create the system that did it, I noticed a lot of issues with the original system. When making a weapon, it would start the stat system before then deciding what weapon type and rarity it was. This was increadibly inefficent and after plenty of testing, it would often not work correctly, having different outcomes roughly about 70% of the time. 
+
+Eventually I came up with a final outcome. I had to reorginize the system. I needed to put the weapon rarity and type before any other systems began to work.
+
 
 ### New Approaches  
 
 ### Testing
 
 ### Technical Difficulties
-
+During this project, I had come up with plenty of new ideas, begining to build them up as blueprints.
+However, as I continued to work on the project, I found myself hating the project more and more, being unable to work on it. As I looked at what I had made, i found myself hating it. But I eventually couldnt deal with what I worked on and deleted it all in anger. This was not a good idea, as it meant I had lost a considerable amount of work.
+However, this meant I could go back and work on everything from a fresh start, learning from my mistakes.
 
 
 ## Outcomes
