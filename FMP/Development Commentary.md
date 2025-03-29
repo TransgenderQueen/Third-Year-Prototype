@@ -1,5 +1,18 @@
 ## Project Outline
 
+This project will be an upgrade on my original prototype. This is based on similar souls-like games, mixed with elements from styles of games like dungeon crawlers, while including elements of weapon crafting. There are many things I wish to include in this project that will have improved since the prototype:
+
+- Weapon crafting system
+- Multiple distinct weapon types that have different movesets
+- Updated animations and art and design for the world
+- More dungeons, with ranging difficulty due to more enemies or bosses.
+
+There are a few things I know I will have an issue with. I am not the most confident in my level design skills, so I know I will need to get a lot of research on how people feel about the art and design.
+
+I additionally have not dabbled with audio before, so setting it up will be a big challenge for me, though I am confident with enough practice and testing I can get it set up.
+
+Ultimatly I am not too worried for this. With a lot of user testing and constant feedback I can fine tune this project.
+
 
 ## Research
 
@@ -35,6 +48,37 @@ Additionally I have also looked at Vault Hunters. This is a Minecraft modpack wh
 
 ---
 
+## Implementation
+
+### Process
+
+### New Approaches  
+
+### Testing
+
+### Technical Difficulties
+
+
+
+## Outcomes
+
+### Source Code/Project Files
+
+### Build Link
+
+### Video Demonstration
+
+
+
+## Reflection
+
+### Research Effectiveness  
+
+### Positive Analysis 
+
+### Negative Analysis  
+
+### Next Time
 
 
 
